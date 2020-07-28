@@ -1,54 +1,50 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
+      "titulo": "Drums Cover",
+      "link": "https://www.youtube.com/channel/UCQbVlxe86ZFvE60JoNqBd1Q",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "",
+        "url": "#"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Drums Cover",
+          "url": "https://www.youtube.com/watch?v=KbIvbuB9zC8"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Jotta A Medley - DRUM COVER (Jon Lombana)",
+          "url": "https://www.youtube.com/watch?v=7BxPT-onkAg"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "Jotta A Medley II - DRUM COVER (Jon Lombana)",
+          "url": "https://www.youtube.com/watch?v=e-Bk8hD3kIg"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "Morgan Simpson | Rather Be - Clean Bandit | Drum Cover |",
+          "url": "https://www.youtube.com/watch?v=hGe5acFs2r0"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "Josivaldo Santos - Deus é bom | Nathaly Marcelino | DVD Experiência",
+          "url": "https://www.youtube.com/watch?v=PWk4W3luzxk"
         },
         {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+          "titulo": "Gerson Lima Filho - ( Drum Cam) com Mulheres em Acordes (momentos)",
+          "url": "https://www.youtube.com/watch?v=VVdxr8GSscE"
         },
         {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
-        },
-        {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        }        
+          "titulo": "Josivaldo Santos - A igreja vem (Anderson Freire) Drumcover",
+          "url": "https://www.youtube.com/watch?v=hKmj8W_NsmQ"
+        }     
       ]
     },
     {
       "titulo": "Back End",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "",
+        "url": "#"
       },
       "videos": [
         {

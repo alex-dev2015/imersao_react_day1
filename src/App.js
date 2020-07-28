@@ -13,7 +13,7 @@ function App() {
       <BannerMain 
         videoTitle={dadosInicias.categorias[0].videos[0].titulo}
         url={dadosInicias.categorias[0].videos[0].url}
-        videoDescription={"O que é Front-end"}
+        videoDescription={"Josivaldo Santos"}
       />
 
       
