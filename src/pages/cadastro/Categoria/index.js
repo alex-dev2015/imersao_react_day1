@@ -1,67 +1,90 @@
 import React , { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
+import FormField from '../../../components/FormField';
+
+
+
+
 
 function CadastroCategoria(){
-  const [categorias, setCategorias] = useState(['Teste']);
-  
   const valueInitials = {
     name: '',
     descrption: '',
-    color: '#000',
+    color: '',
   }
+  const [categorias, setCategorias] = useState([]);
+  const [values, setValues] = useState(valueInitials);
   
-  const [nomeDaCategoria, setNomeCategoria] = useState(valueInitials);
+  
+
+  function setValue(chave, value) {
+    setValues({
+      ...values,
+      [chave]: value,
+    })
+  }
+
+  function handleSwitch(props){
+      setValue(
+      props.target.getAttribute('name'),
+      props.target.value);
+  }
 
     return (
       <PageDefault>
-        <h1>Cadastro de Categoria: {nomeDaCategoria}</h1>
+        <h1>Cadastro de Categoria: {values.name}</h1>
 
         <form onSubmit={function handleSubmit(event) {
           event.preventDefault();
           setCategorias([
             ...categorias,
-            nomeDaCategoria
+            values
           ])
+
+          setValues(valueInitials)
         }} >
 
-          <div>
-          <label>
-            Nome da Categoria:
-            <input
-              type="text"
-              placeholder={nomeDaCategoria}
-              onChange={function handleSwitch(props){
-                  setNomeCategoria(props.target.value);
-              }}
-            />
-          </label>
-          </div>
+          <FormField 
+            label="Nome da Categoria:"
+            type="text"
+            name="name"
+            value={values.name}
+            onChange={handleSwitch}
+          />
+          
           <div>      
-          <label>
-            Descrição:
-            <textarea
-              type="text"
-              placeholder={nomeDaCategoria}
-              onChange={function handleSwitch(props){
-                  setNomeCategoria(props.target.value);
-              }}
-            />
-          </label>
+            <label>
+              Descrição:
+              <textarea
+                type="text"
+                placeholder={values.descrption}
+                name="name"
+                onChange={handleSwitch}
+              />
+            </label>
           </div>
-          <div>              
-          <label>
-            Cor:
-            <input
-              type="color"
-              placeholder={nomeDaCategoria}
-              onChange={function handleSwitch(props){
-                  setNomeCategoria(props.target.value);
-              }}
-            />
-          </label>
 
-          </div>
+          <FormField 
+            label="Cor: "
+            type="color"
+            name="color"
+            value={values.color}
+            onChange={handleSwitch}
+          />
+          
+            {/* <div>              
+                <label>
+                  Cor:
+                  <input
+                    type="color"
+                    placeholder={values.color}
+                    name="color"
+                    onChange={handleSwitch}
+                  />
+                </label>
+
+            </div> */}
 
           <button>Cadastrar</button>
         </form>
@@ -70,7 +93,7 @@ function CadastroCategoria(){
           {categorias.map((categoria, index) =>{
             return (
               <li key={`${categoria}${index}`}>
-                {categoria}
+                {categoria.name}
               </li>
             )
           })}
